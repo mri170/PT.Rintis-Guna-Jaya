@@ -69,7 +69,7 @@
 
       <div class="row">
         <div class="about-img">
-          <img src="img/gedung .jpg" alt="Tentang Kami" />
+          <img src="img/Gedung.jpg" alt="Tentang Kami" />
         </div>
         <div class="content">
           <h3>Kenapa memilih kami?</h3>
@@ -510,28 +510,20 @@
       // Example product data
       const products = [
         {
-          title: "Jasa Legalitas HGB",
           image: "img/List HGB.png",
           price: "Rp. 20.000.000",
-          desc: "Layanan legalitas Hak Guna Bangunan untuk properti Anda.",
         },
         {
-          title: "HKI",
           image: "img/LIST HKI.png",
           price: "Start From Rp. 3.000.000",
-          desc: "Layanan Hak Kekayaan Intelektual untuk perlindungan bisnis Anda.",
         },
         {
-          title: "Perizinan Usaha",
           image: "img/products/CV.jpg",
           price: "Start From Rp. 2.500.000",
-          desc: "Pengurusan izin usaha secara profesional dan terpercaya.",
         },
         {
-          title: "Pendirian Perusahaan",
           image: "img/Price List.png",
           price: "Harga Variatif",
-          desc: "Layanan pendirian perusahaan sesuai kebutuhan Anda.",
         },
       ];
 
@@ -541,10 +533,9 @@
           e.preventDefault();
           const product = products[idx];
           document.getElementById("modal-product-content").innerHTML = `
-            <img src="${product.image}" alt="${product.title}" style="max-width:100%;border-radius:8px;">
-            <h3>${product.title}</h3>
-            <p style="font-weight:600;">${product.price}</p>
-            <p>${product.desc}</p>
+            <img src="${product.image}" style="max-width:100%;border-radius:8px;">
+      
+          
           `;
           document.getElementById("item-detail-modal").style.display = "block";
         });
